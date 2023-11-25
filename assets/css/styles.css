@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 500px;
+  background-color: #007633;
+  border: solid 10px #ffc800;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.flashcard-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flashcard-indicators {
+  font-size: large;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 20px;
+  padding: 5px 15px 5px 15px;
+  background-color: #fee2aa;
+  color: #000000;
+  border: solid 3px #ffffff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.flashcard {
+  width: 400px;
+  height: 250px;
+  perspective: 1000px;
+  border: solid 8px #ffffff;
+  transform-style: preserve-3d;
+  transition: transform 0.3s;
+  margin: 0 10px;
+  cursor: pointer;
+  -webkit-transition: transform 0.3s;
+  -moz-transition: transform 0.3s;
+  -ms-transition: transform 0.3s;
+  -o-transition: transform 0.3s;
+  border-radius: 15%;
+  -webkit-border-radius: 15%;
+  -moz-border-radius: 15%;
+  -ms-border-radius: 15%;
+  -o-border-radius: 15%;
+}
+
+.flashcard.clicked {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+
+.front {
+  background-color: #006e7a;
+  color: #fff;
+  font-size: 50px;
+}
+
+.back {
+  background-color: #fcffb0;
+  color: #000000;
+  transform: rotateY(180deg);
+  font-size: 60px;
+}
