@@ -1,4 +1,4 @@
-# Proyecto que crea una colección de baraja de cartas para memorizar vervos en pasado en inglés
+# Proyecto que crea una colección de baraja de cartas para memorizar verbos en pasado en inglés
 
 Proyecto personal de aplicación de conocimientos en JS al cursar la mitad del módulo de Javascript en Desafío Latam para la carrera de FrontEnd Javascript.
 Creación de proyecto 25/11/2023
